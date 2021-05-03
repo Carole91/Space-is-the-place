@@ -5,10 +5,13 @@ import Satellites from './components/Satellites'
 import Moons from './components/Moons'
 import Stars from './components/Stars'
 import Team from './components/Team'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function Routing() {
     return (
         <>
+        <Navbar />
             <Switch>
                 <Route exact path="/">
                     <Redirect to="/home" />
@@ -32,6 +35,7 @@ function Routing() {
                     <Team />
                 </Route>
             </Switch>
+            <Footer />
         </>
     )
 }
