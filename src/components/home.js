@@ -5,7 +5,7 @@ import Nasa from './Nasa'
 import {useParams, useHistory, useLocation} from 'react-router-dom'
 
 function Home() {
-    const {page} = useParams()
+    const {page} = useParams();
     let history = useHistory();
     let location = useLocation();
 

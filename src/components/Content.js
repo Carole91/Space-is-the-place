@@ -13,9 +13,10 @@ export default function Content({ data, numPages, changePage, page }) {
             minute: 'numeric'
         }))
     }
-    /* console.log(data) */
+    console.log(page)
     return (
         <div className='contentContainer'>
+            
 
             {!data ? <h3>Loading...</h3> : data.length === 0 ? <h3>Nothing found :(</h3> : data.map((e) => (
                 <>
